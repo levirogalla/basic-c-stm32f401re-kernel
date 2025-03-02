@@ -1,0 +1,1 @@
+These files used to be in the root directory. I put them here to remove clutter and I'm working in VS Code now so I don't need the for the STM32CubeIDE but it could be usefull to keep them just in case.
