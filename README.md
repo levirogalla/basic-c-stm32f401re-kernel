@@ -27,19 +27,24 @@ Ensure you have the necessary toolchain installed:
 
 ---
 
-### **🔹 Running the Kernel**
+### 🔹 Running the Kernel
 
-Once dependencies are installed, you can flash and run the kernel using **OpenOCD**.
+Once the dependencies are installed, you can **flash** and **run** the kernel using **OpenOCD**.
 
-#### **▶ Run in Debug Mode**  
+#### 1. Flash the Kernel
+To flash the kernel to your STM32 device, run the following command:
+
 ```sh
-./debug.sh
+make flash
 ```
-#### **▶ Run in Release Mode**  
-```sh
-./release.sh
-```  
-These scripts **mimic** how **STM32CubeIDE** builds the project, except that CubeIDE uses **ST-Link**, whereas these scripts use **OpenOCD** for flashing.
+
+#### 2. View the Output
+To view the kernel's output, open a serial port with the following configurations:
+
+- **Baud rate**: 115200
+- **Data bits**: 8
+- **Stop bits**: 1
+- **Parity**: None
 
 ---
 
@@ -47,12 +52,6 @@ These scripts **mimic** how **STM32CubeIDE** builds the project, except that Cub
 
 - This project was designed for **educational purposes** in MTE241.  
 - You may need to **modify OpenOCD configurations** based on your setup.  
-- If you prefer **STM32CubeIDE**, you can import the project and build it there.  
+- If you prefer **STM32CubeIDE**, you can import the project and build it there. I kept all the original [Eclipse IDE config files](./.stm32cube-config-files) incase they are needed.
 
----
-
-## 📝 **License**
-This project is for **educational use only**.  
-
----
 
